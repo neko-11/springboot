@@ -1,11 +1,13 @@
 spring boot + Mybtais
 
-¼¯³É Mybatis-generator ÅäÖÃ
+é›†æˆ Mybatis-generator é…ç½®
 
-Òª×¢ÒâgeneratorµÄÅäÖÃ¸ü¸Ä
+è¦æ³¨æ„generatorçš„é…ç½®æ›´æ”¹
 
-×Ô¶¯Éú³ÉÊµÌåÀàºÍMapper½Ó¿Ú¼°xmlÎÄ¼ş
+è‡ªåŠ¨ç”Ÿæˆå®ä½“ç±»å’ŒMapperæ¥å£åŠxmlæ–‡ä»¶
 
-ÅäÖÃÁËcorsFilter,½â¾ö¿çÓò·ÃÎÊµÄÎÊÌâ
+é…ç½®äº†corsFilter,è§£å†³è·¨åŸŸè®¿é—®çš„é—®é¢˜
 
-Ò²¿ÉÒÔÊ¹ÓÃ @CrossOrigin ×¢½âÖÃÓÚcontroller
+é…ç½®äº†MD5,å¸¸ç”¨äºå¯†ç åŠ å¯†
+
+ä¹Ÿå¯ä»¥ä½¿ç”¨ @CrossOrigin æ³¨è§£ç½®äºcontroller
