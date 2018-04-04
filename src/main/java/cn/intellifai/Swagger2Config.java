@@ -21,8 +21,8 @@ public class Swagger2Config {
     public Docket createRestApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
-                .select()//为当前包路径
-                .apis(RequestHandlerSelectors.basePackage("cn.intellifai.Controller"))
+                .select()
+                .apis(RequestHandlerSelectors.basePackage("cn.intellifai.Controller"))//为当前包路径
                 .paths(PathSelectors.any())
                 .build();
     }
@@ -30,12 +30,12 @@ public class Swagger2Config {
 
     //构建 api文档的详细信息函数
     private ApiInfo apiInfo() {
-        return new ApiInfoBuilder() //页面标题
-                .title("Spring Boot 测试使用 Swagger2 构建RESTful API")
-                .termsOfServiceUrl("http://localhost/") //创建人
-                .contact("zhushuangfei") //版本号
-                .version("1.0") //描述
-                .description("API 描述")
+        return new ApiInfoBuilder()
+                .title("Spring Boot 测试使用 Swagger2 构建RESTful API")//页面标题
+                .termsOfServiceUrl("http://localhost/")
+                .contact("zhushuangfei")//创建人
+                .version("1.0") //版本号
+                .description("API 描述")//描述
                 .build();
     }
 }
