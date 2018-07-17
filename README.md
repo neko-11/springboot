@@ -1,4 +1,4 @@
-Spring boot2.03 + Mybtais8.0 + swagger2.9
+* Spring boot2.03 + Mybtais8.0 + swagger2.9
 
 
 `配置了 Mybatis-generator`
