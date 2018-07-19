@@ -10,17 +10,16 @@ import org.springframework.stereotype.Component;
 import java.util.Date;
 
 /**
- * Created by zhushuangfei on 2018/3/14
+ * Created by zhushuangfei on 2018/7/19
  */
 
 @Aspect
 @Component
 public class addAspect {
-
     private static Logger logger = LoggerFactory.getLogger(addAspect.class);
 
-    @Around("execution(* cn.intellifai.*.Impl.IntellifaiAiReportServiceImpl.add*(..))")
-    public Object addAiResultAOP(ProceedingJoinPoint joinPoint) throws Throwable {
+    @Around("execution(* com.handchina.*.Impl.*ServiceImpl.add*(..))")
+    public Object addMethodAOP(ProceedingJoinPoint joinPoint) throws Throwable {
         //获取service参数
         Object[] objs = joinPoint.getArgs();
 

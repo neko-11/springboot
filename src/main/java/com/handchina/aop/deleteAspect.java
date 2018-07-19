@@ -10,18 +10,16 @@ import org.springframework.stereotype.Component;
 import java.util.Date;
 
 /**
- * Created by zhushuangfei on 2018/3/15
+ * Created by zhushuangfei on 2018/7/19
  */
 
 @Aspect
 @Component
 public class deleteAspect {
-
     private static Logger logger = LoggerFactory.getLogger(deleteAspect.class);
 
-
-    @Around("execution(* cn.intellifai.*.Impl.IntellifaiAiReportServiceImpl.delete*(..))")
-    public Object deleteAiResultAOP(ProceedingJoinPoint joinPoint) throws Throwable {
+    @Around("execution(* com.handchina.*.Impl.*ServiceImpl.delete*(..))")
+    public Object deleteMethodAOP(ProceedingJoinPoint joinPoint) throws Throwable {
         //获取service参数
         Object[] objs = joinPoint.getArgs();
 
