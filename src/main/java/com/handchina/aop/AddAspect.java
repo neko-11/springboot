@@ -15,11 +15,11 @@ import java.util.Date;
 
 @Aspect
 @Component
-public class deleteAspect {
-    private static Logger logger = LoggerFactory.getLogger(deleteAspect.class);
+public class AddAspect {
+    private static Logger logger = LoggerFactory.getLogger(AddAspect.class);
 
-    @Around("execution(* com.handchina.*.Impl.*ServiceImpl.delete*(..))")
-    public Object deleteMethodAOP(ProceedingJoinPoint joinPoint) throws Throwable {
+    @Around("execution(* com.handchina.*.Impl.*ServiceImpl.add*(..))")
+    public Object addMethodAOP(ProceedingJoinPoint joinPoint) throws Throwable {
         //获取service参数
         Object[] objs = joinPoint.getArgs();
 

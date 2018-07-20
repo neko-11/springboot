@@ -15,8 +15,8 @@ import java.util.Date;
 
 @Aspect
 @Component
-public class getAspect {
-    private static Logger logger = LoggerFactory.getLogger(addAspect.class);
+public class GetAspect {
+    private static Logger logger = LoggerFactory.getLogger(AddAspect.class);
 
     @Around("execution(* com.handchina.*.Impl.*Impl.get*(..))")
     public Object getMethodAOP(ProceedingJoinPoint joinPoint) throws Throwable {
