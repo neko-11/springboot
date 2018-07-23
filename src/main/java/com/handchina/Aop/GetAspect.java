@@ -1,4 +1,4 @@
-package com.handchina.aop;
+package com.handchina.Aop;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -15,11 +15,11 @@ import java.util.Date;
 
 @Aspect
 @Component
-public class UpdateAspect {
-    private static Logger logger = LoggerFactory.getLogger(UpdateAspect.class);
+public class GetAspect {
+    private static Logger logger = LoggerFactory.getLogger(AddAspect.class);
 
-    @Around("execution(* com.handchina.*.Impl.*ServiceImpl.update*(..))")
-    public Object updateMethodAOP(ProceedingJoinPoint joinPoint) throws Throwable {
+    @Around("execution(* com.handchina.*.Impl.*Impl.get*(..))")
+    public Object getMethodAOP(ProceedingJoinPoint joinPoint) throws Throwable {
         //获取service参数
         Object[] objs = joinPoint.getArgs();
 
