@@ -9,5 +9,5 @@ spring:
 mybatis:
   mapper-locations: classpath:Mappers/*.xml
 logging:
-  level: debug
+#  level: debug
   path: D:\gitHub\springboot\log
