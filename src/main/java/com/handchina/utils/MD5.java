@@ -1,4 +1,4 @@
-package com.handchina.config;
+package com.handchina.utils;
 
 import sun.misc.BASE64Encoder;
 
