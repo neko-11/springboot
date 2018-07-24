@@ -21,5 +21,6 @@ mybatis:
   mapper-locations: classpath:Mappers/*.xml
   type-aliases-package: com.handchina.Entity
 logging:
-#  level: debug
+  level:
+    com.handchina: debug
   path: D:\gitHub\springboot\log
