@@ -6,8 +6,20 @@ spring:
     url: jdbc:mysql://localhost:3306/education?useUnicode=true&characterEncoding=utf8
     username: root
     password: 123456
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 15
+      auto-commit: true
+      idle-timeout: 10000 #min 10000ms , default 600000ms
+      pool-name: MyHikariPool
+      connection-timeout: 10000
+      connection-test-query: SELECT 1
+      max-lifetime: 60000 #min 30000ms , default 1800000ms
+
 mybatis:
   mapper-locations: classpath:Mappers/*.xml
+  type-aliases-package: com.handchina.Entity
 logging:
 #  level: debug
   path: D:\gitHub\springboot\log
