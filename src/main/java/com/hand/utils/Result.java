@@ -1,4 +1,4 @@
-package com.handchina.Utils;
+package com.hand.utils;
 
 /**
  * Created by zhushuangfei on 2018/3/13

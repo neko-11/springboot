@@ -22,7 +22,7 @@ public class Swagger2Config {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.handchina.Controller"))//为当前包路径
+                .apis(RequestHandlerSelectors.basePackage("com.handchina.controller"))//为当前包路径
                 .paths(PathSelectors.any())
                 .build();
     }

@@ -19,7 +19,7 @@ spring:
 
 mybatis:
   mapper-locations: classpath:Mappers/*.xml
-  type-aliases-package: com.handchina.Entity
+  type-aliases-package: com.hand.entity
 logging:
   level:
     com.handchina: debug
